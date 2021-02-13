@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>？？？？？？</title></head><body>
+
+  
+    
+    <title>？？？？？</title>
+    <style>
+*{box-sizing:border-box;}
+body{margin:0;font-size:20px;}
+.container{position:relative;display:flex;align-items:center;justify-content:center;height:100vh;background:white;color:black;font-family:arial, sans-serif;overflow:hidden;}
+.content{position:relative;width:600px;max-width:100%;margin:20px;background:white;padding:60px 40px;text-align:center;box-shadow:-10px 10px 67px -12px rgba(0, 0, 0, 0.2);opacity:0;animation:apparition 0.8s 1.2s cubic-bezier(0.39, 0.575, 0.28, 0.995) forwards;}
+.content p{font-size:1.3rem;margin-top:0;margin-bottom:0.6rem;letter-spacing:0.1rem;color:#595959;}
+.content p:last-child{margin-bottom:0;}
+.content button{display:inline-block;margin-top:2rem;padding:0.5rem 1rem;border:3px solid #595959;background:transparent;font-size:1rem;color:#595959;text-decoration:none;cursor:pointer;font-weight:bold;}
+.particle{position:absolute;display:block;pointer-events:none;}
+.particle:nth-child(1){top:25.3968253968%;left:93.2286555447%;font-size:19px;filter:blur(0.02px);animation:28s float2 infinite;}
+.particle:nth-child(2){top:19.536019536%;left:70.6575073602%;font-size:19px;filter:blur(0.04px);animation:22s floatReverse2 infinite;}
+.particle:nth-child(3){top:81.2575574365%;left:73.0282375852%;font-size:27px;filter:blur(0.06px);animation:28s floatReverse2 infinite;}
+.particle:nth-child(4){top:95.2147239264%;left:28.5714285714%;font-size:15px;filter:blur(0.08px);animation:22s float2 infinite;}
+.particle:nth-child(5){top:87.1670702179%;left:48.7329434698%;font-size:26px;filter:blur(0.1px);animation:33s float infinite;}
+.particle:nth-child(6){top:89.6551724138%;left:20.7509881423%;font-size:12px;filter:blur(0.12px);animation:38s float infinite;}
+.particle:nth-child(7){top:34.5252774353%;left:32.6409495549%;font-size:11px;filter:blur(0.14px);animation:29s float infinite;}
+.particle:nth-child(8){top:34.188034188%;left:70.6575073602%;font-size:19px;filter:blur(0.16px);animation:22s float2 infinite;}
+.particle:nth-child(9){top:10.7843137255%;left:1.968503937%;font-size:16px;filter:blur(0.18px);animation:31s float2 infinite;}
+.particle:nth-child(10){top:12.7450980392%;left:0.9842519685%;font-size:16px;filter:blur(0.2px);animation:34s float2 infinite;}
+.particle:nth-child(11){top:75.3977968176%;left:56.0471976401%;font-size:17px;filter:blur(0.22px);animation:35s floatReverse2 infinite;}
+.particle:nth-child(12){top:79.322853688%;left:43.8169425511%;font-size:27px;filter:blur(0.24px);animation:25s float2 infinite;}
+.particle:nth-child(13){top:16.52490887%;left:76.2463343109%;font-size:23px;filter:blur(0.26px);animation:34s floatReverse infinite;}
+.particle:nth-child(14){top:36.3190184049%;left:44.3349753695%;font-size:15px;filter:blur(0.28px);animation:38s floatReverse2 infinite;}
+.particle:nth-child(15){top:41.6464891041%;left:16.5692007797%;font-size:26px;filter:blur(0.3px);animation:39s floatReverse infinite;}
+.particle:nth-child(16){top:91.7073170732%;left:93.137254902%;font-size:20px;filter:blur(0.32px);animation:26s float infinite;}
+.particle:nth-child(17){top:86.7469879518%;left:94.1747572816%;font-size:30px;filter:blur(0.34px);animation:40s floatReverse infinite;}
+.particle:nth-child(18){top:81.2729498164%;left:20.6489675516%;font-size:17px;filter:blur(0.36px);animation:40s float2 infinite;}
+.particle:nth-child(19){top:38.4236453202%;left:10.8695652174%;font-size:12px;filter:blur(0.38px);animation:30s float infinite;}
+.particle:nth-child(20){top:82.2249093108%;left:73.0282375852%;font-size:27px;filter:blur(0.4px);animation:26s floatReverse2 infinite;}
+.particle:nth-child(21){top:3.8787878788%;left:38.0487804878%;font-size:25px;filter:blur(0.42px);animation:30s float infinite;}
+.particle:nth-child(22){top:46.6585662211%;left:60.6060606061%;font-size:23px;filter:blur(0.44px);animation:34s floatReverse infinite;}
+.particle:nth-child(23){top:55.9509202454%;left:76.8472906404%;font-size:15px;filter:blur(0.46px);animation:39s float2 infinite;}
+.particle:nth-child(24){top:4.9321824908%;left:83.0860534125%;font-size:11px;filter:blur(0.48px);animation:23s float infinite;}
+.particle:nth-child(25){top:42.3124231242%;left:13.8203356367%;font-size:13px;filter:blur(0.5px);animation:29s float infinite;}
+.particle:nth-child(26){top:72.6380368098%;left:15.763546798%;font-size:15px;filter:blur(0.52px);animation:31s floatReverse infinite;}
+.particle:nth-child(27){top:67.6328502415%;left:40.8560311284%;font-size:28px;filter:blur(0.54px);animation:29s floatReverse2 infinite;}
+.particle:nth-child(28){top:49.156626506%;left:62.1359223301%;font-size:30px;filter:blur(0.56px);animation:28s float infinite;}
+.particle:nth-child(29){top:16.7076167076%;left:28.5996055227%;font-size:14px;filter:blur(0.58px);animation:26s floatReverse infinite;}
+.particle:nth-child(30){top:68.8484848485%;left:96.5853658537%;font-size:25px;filter:blur(0.6px);animation:22s floatReverse2 infinite;}
+.particle:nth-child(31){top:76.0048721072%;left:21.5475024486%;font-size:21px;filter:blur(0.62px);animation:27s floatReverse2 infinite;}
+.particle:nth-child(32){top:61.7647058824%;left:0.9842519685%;font-size:16px;filter:blur(0.64px);animation:39s float infinite;}
+.particle:nth-child(33){top:38.7878787879%;left:43.9024390244%;font-size:25px;filter:blur(0.66px);animation:29s floatReverse infinite;}
+.particle:nth-child(34){top:62.1454993835%;left:59.3471810089%;font-size:11px;filter:blur(0.68px);animation:35s float infinite;}
+.particle:nth-child(35){top:89.4348894349%;left:28.5996055227%;font-size:14px;filter:blur(0.7px);animation:36s floatReverse infinite;}
+.particle:nth-child(36){top:36.803874092%;left:82.8460038986%;font-size:26px;filter:blur(0.72px);animation:35s floatReverse infinite;}
+.particle:nth-child(37){top:63.4920634921%;left:50.0490677134%;font-size:19px;filter:blur(0.74px);animation:28s floatReverse infinite;}
+.particle:nth-child(38){top:71.9319562576%;left:92.8641251222%;font-size:23px;filter:blur(0.76px);animation:30s float infinite;}
+.particle:nth-child(39){top:36.4532019704%;left:26.6798418972%;font-size:12px;filter:blur(0.78px);animation:39s float2 infinite;}
+.particle:nth-child(40){top:54.1062801932%;left:78.7937743191%;font-size:28px;filter:blur(0.8px);animation:30s float infinite;}
+.particle:nth-child(41){top:81.2575574365%;left:69.1333982473%;font-size:27px;filter:blur(0.82px);animation:35s float2 infinite;}
+.particle:nth-child(42){top:87.7108433735%;left:35.9223300971%;font-size:30px;filter:blur(0.84px);animation:24s float2 infinite;}
+.particle:nth-child(43){top:75.7281553398%;left:30.2734375%;font-size:24px;filter:blur(0.86px);animation:27s floatReverse2 infinite;}
+.particle:nth-child(44){top:9.8039215686%;left:57.0866141732%;font-size:16px;filter:blur(0.88px);animation:36s floatReverse2 infinite;}
+.particle:nth-child(45){top:49.5145631068%;left:5.859375%;font-size:24px;filter:blur(0.9px);animation:37s floatReverse infinite;}
+@keyframes apparition{from{opacity:0;transform:translateY(100px);}to{opacity:1;transform:translateY(0);}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(180px);}}
+@keyframes floatReverse{0%,100%{transform:translateY(0);}50%{transform:translateY(-180px);}}
+@keyframes float2{0%,100%{transform:translateY(0);}50%{transform:translateY(28px);}}
+@keyframes floatReverse2{0%,100%{transform:translateY(0);}50%{transform:translateY(-28px);}}
+    </style>
+  
+  
+    <main class="container">
+      <span class="particle">？</span><span class="particle">？</span><span class="particle"> </span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">？</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span><span class="particle">?</span>
+      <article class="content">
+        <p><strong>???错误</strong></p>
+        <p>？？？？？！</p>
+        <p><a href="http://r.photo.store.qq.com/psc?/V145IKQs25BFOx/xBqlYxewEGhxwKHKc.e8gdskp7uO.ENodo8iKJ0n5TGO73ttkCJzUmByiJE9meNVohoewElU16QU28YkQayRZwNTbVc5dWIM01AD1j7JShc!/r"><button>？？？</button></a></p>
+      </article>
+    </main>
+  
+</body></html>
